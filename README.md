@@ -141,3 +141,95 @@ Say hi: [hello@polygant.net](mailto:hello@polygant.net) . We will be happy to wo
 
 ## License
 Apache License, Version 2.0
+
+
+
+
+New start, second life!
+
+
+Option 1: Interactive Menu (Recommended)
+bash
+
+sudo bash install.sh
+# Then select options from menu
+
+Option 2: Run Individual Phases
+bash
+
+# Phase 1: Ubuntu Hardening
+sudo bash install.sh phase1
+
+# Phase 2: Docker Setup
+sudo bash install.sh phase2
+
+# Phase 3: Secrets Management
+sudo bash install.sh phase3
+
+# Phase 4: Deployment (with domain)
+sudo bash install.sh phase4 exchange.yourdomain.com admin
+
+# Phase 5: Monitoring & Backups
+sudo bash install.sh phase5
+
+# Phase 6: Verification
+sudo bash install.sh phase6
+
+Option 3: Quick Reference
+bash
+
+bash install.sh quick-ref
+
+Option 4: Troubleshooting
+bash
+
+bash install.sh troubleshoot
+
+🚀 Complete Setup Steps
+
+    Save the script:
+
+bash
+
+curl -O https://raw.githubusercontent.com/BlackPeter13/OpenCEX/master/install.sh
+chmod +x install.sh
+
+    Run Phase 1:
+
+bash
+
+sudo ./install.sh phase1
+
+    Run Phase 2:
+
+bash
+
+sudo ./install.sh phase2
+
+    Run Phase 3 and Configure:
+
+bash
+
+sudo ./install.sh phase3
+# Then edit: nano /app/opencex/secrets/production.env.template
+# Copy to: cp /app/opencex/secrets/production.env.template /app/opencex/secrets/production.env
+
+    Run Phase 4:
+
+bash
+
+sudo ./install.sh phase4 yourdomain.com admin
+
+    Run Phase 5:
+
+bash
+
+sudo ./install.sh phase5
+
+    Run Phase 6 (Verify):
+
+bash
+
+bash install.sh phase6
+
+
